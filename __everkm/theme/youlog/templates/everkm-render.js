@@ -2481,6 +2481,19 @@ var RootLayout = (props) => {
   })));
 };
 
+// src/utils/jsRenderError.ts
+var PAGE_NOT_FOUND = "PAGE_NOT_FOUND";
+function pageNotFound(message) {
+  const err = new Error(message);
+  err.code = PAGE_NOT_FOUND;
+  return err;
+}
+
+// src/utils/engineCompat.ts
+function maybeAwait(value) {
+  return Promise.resolve(value);
+}
+
 // src/layout/icons.tsx
 var _tmpl$6 = ["<svg", ' viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>'];
 var _tmpl$24 = ["<svg", ' viewBox="0 0 16 16" fill="currentColor"><path d="M6.6 13.4L5.2 12l4-4-4-4 1.4-1.4L12 8z"></path></svg>'];
@@ -2784,7 +2797,7 @@ var PrevNextLinks = (props) => {
     const id = props.qs?.prev;
     if (!id) return void 0;
     try {
-      return everkm.post_detail(props.requestId, {
+      return everkm.post_meta(props.requestId, {
         id: String(id)
       });
     } catch (e) {
@@ -2795,7 +2808,7 @@ var PrevNextLinks = (props) => {
     const id = props.qs?.next;
     if (!id) return void 0;
     try {
-      return everkm.post_detail(props.requestId, {
+      return everkm.post_meta(props.requestId, {
         id: String(id)
       });
     } catch (e) {
@@ -3093,36 +3106,45 @@ function isTruthyQuery(value) {
   }
   return false;
 }
+async function loadBookPageData(pageContext) {
+  const requestId = pageContext.request_id;
+  const post = pageContext.post;
+  if (!post) throw pageNotFound("Post not found");
+  const doc = await maybeAwait(everkm.post_detail(requestId, {
+    path: post.path
+  }));
+  if (!doc) throw pageNotFound("Post not found");
+  const navFile = pageContext.qs?.nav_file;
+  let navDoc = null;
+  let pageNav = {};
+  if (navFile) {
+    try {
+      navDoc = await maybeAwait(everkm.post_detail(requestId, {
+        path: navFile,
+        allow_missing: true
+      })) ?? null;
+    } catch {
+      navDoc = null;
+    }
+    pageNav = await maybeAwait(everkm.nav_indicator(requestId, {
+      from_file: navFile
+    }));
+  }
+  return {
+    doc,
+    navDoc,
+    pageNav
+  };
+}
 var BookPage = (props) => {
   const pageContext = props.props;
   const requestId = pageContext.request_id;
-  const doc = (() => {
-    const post = pageContext.post;
-    if (!post) throw new Error("Post not found");
-    const doc2 = everkm.post_detail(requestId, {
-      path: post.path
-    });
-    if (!doc2) throw new Error("Post not found");
-    return doc2;
-  })();
-  const navFile = pageContext.qs?.nav_file;
+  const {
+    doc,
+    navDoc,
+    pageNav
+  } = props.data;
   const stackLayout = isTruthyQuery(pageContext.qs?.stack);
-  const navDoc = (() => {
-    if (!navFile) return null;
-    try {
-      const doc2 = everkm.post_detail(requestId, {
-        path: navFile,
-        allow_missing: true
-      });
-      if (!doc2) return null;
-      return doc2;
-    } catch {
-      return null;
-    }
-  })();
-  const pageNav = navFile ? everkm.nav_indicator(requestId, {
-    from_file: navFile
-  }) : {};
   const configDefaultMissing = Symbol("configDefaultMissing");
   const configValue = (path, defaultValue = configDefaultMissing) => {
     if (defaultValue !== configDefaultMissing) {
@@ -3196,21 +3218,25 @@ var BookPage = (props) => {
 
 // src/pages/index.tsx
 async function renderPage(compName, props) {
-  const html = await renderToStringAsync(() => {
-    switch (compName) {
-      case "book":
-        return createComponent(RootLayout, {
-          context: props,
-          get children() {
-            return createComponent(BookPage, {
-              props
-            });
-          }
-        });
-      default:
-        throw new Error(`Page ${compName} not found`);
+  let body;
+  switch (compName) {
+    case "book": {
+      const data = await loadBookPageData(props);
+      body = createComponent(RootLayout, {
+        context: props,
+        get children() {
+          return createComponent(BookPage, {
+            props,
+            data
+          });
+        }
+      });
+      break;
     }
-  });
+    default:
+      throw pageNotFound(`Page ${compName} not found`);
+  }
+  const html = await renderToStringAsync(() => body);
   const cssYoulog = everkm.assets(props.request_id, {
     type: "css",
     section: "youlog"
@@ -3471,7 +3497,7 @@ async function renderDcard(name, props) {
           }
         }, props));
       default:
-        throw new Error(`Dcard ${name} not found`);
+        throw pageNotFound(`Dcard ${name} not found`);
     }
   });
   return html;
