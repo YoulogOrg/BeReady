@@ -1,7 +1,7 @@
 ---
 id: e320f6fc-7c1c-422e-9262-9144937812de
 created_at: 2026-09-17T21:38:11+08:00
-filename: spec/BeReady 创作约束（AI 接力）.md
+filename: _spec/BeReady 创作约束（AI 接力）.md
 title: BeReady 创作约束（AI 接力）
 status: active
 ---
@@ -12,9 +12,9 @@ status: active
 >
 > 它与三份既有规范的关系：
 >
-> - `spec/core.md` —— 第一原则（用户亲定，最高优先级）；
-> - `spec/BeReady 内容架构设计.md` —— 愿景与信息架构（背景参考）；
-> - `spec/BeReady 文件组织与知识节点管理规范 2.md` + `spec/BeReady Wikilink 命名与链接规范.md` —— 结构与链接规则（仍然有效）；
+> - `_spec/core.md` —— 第一原则（用户亲定，最高优先级）；
+> - `_spec/BeReady 内容架构设计.md` —— 愿景与信息架构（背景参考）；
+> - `_spec/BeReady 文件组织与知识节点管理规范 2.md` + `_spec/BeReady Wikilink 命名与链接规范.md` —— 结构与链接规则（仍然有效）；
 > - **本文 —— 把第一原则落成可执行的写作与操作约束。**
 >
 > 冲突时的优先级：**core.md > 本文 > 其他规范**。
@@ -128,7 +128,7 @@ status: draft
 | `scenarios/` | **可随意调整**（场景/整合主题组合入口，2026-09-19 起） |
 | 工作区根目录 | **允许按原规划（规范 §40）新建合适的区域目录**；顶层区域 = `capabilities/` + `scenarios/`（原「仅限 capabilities/」已解除） |
 | `_raw/` | 原始输入区，只增不改，不动 |
-| `spec/` | 原始设计文档，不动；新增规范需用户明确要求（本文即为一例） |
+| `_spec/` | 原始设计文档，不动；新增规范需用户明确要求（本文即为一例） |
 | `__everkm/` | 平台运行时，不动 |
 | `_progress/` | 交接记录，每轮结束追加新编号文件（唯一进度来源） |
 
@@ -136,7 +136,7 @@ status: draft
 
 # 8. 每轮工作流程
 
-1. 开始前读：`spec/core.md`、本文、最近的 `_progress/NNN.md`；
+1. 开始前读：`_spec/core.md`、本文、最近的 `_progress/NNN.md`；
 2. 写作/改写按第 1–5 条执行；
 3. 结束时校验（见第 9 条）并产出 `_progress/NNN.md`（编号 = 现有最大 + 1）：本轮完成 / 关键判断 / 新产生的待完善节点 / 下一步；
 4. 不确定归属、Level、去留的问题：**记入 Progress，不擅自扩大任务**。
@@ -151,7 +151,7 @@ status: draft
 - [ ] 覆盖了非城市场景（不默认城市）；可自制资源写了核心制作步骤；涉及药品时按"常见药品优先、中草药后续"；
 - [ ] front matter 四件齐全且与路径、目录、H1 一致；
 - [ ] title 全库唯一；wikilink 用 title 写法；未新增真死链（预告链接除外）；
-- [ ] 未改动 `_raw/`、`spec/`、`__everkm/` 中的既有文件；
+- [ ] 未改动 `_raw/`、`_spec/`、`__everkm/` 中的既有文件；
 - [ ] `_progress/` 已追加本轮记录。
 
 ---

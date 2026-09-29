@@ -4,11 +4,11 @@
 
 用法（在仓库任意位置执行都可以，脚本自动定位仓库根）：
 
-    python3 spec/scripts/check.py              # 结构校验 + 未解析链接（默认视图）
-    python3 spec/scripts/check.py --brief      # 只看两行结论
-    python3 spec/scripts/check.py --stale      # 追加：过期标注检查（（方向）/「尚未展开」段落）
-    python3 spec/scripts/check.py --shallow    # 追加：浅句候选（疑似「正确的废话」）
-    python3 spec/scripts/check.py --all        # 全部检查
+    python3 _spec/scripts/check.py              # 结构校验 + 未解析链接（默认视图）
+    python3 _spec/scripts/check.py --brief      # 只看两行结论
+    python3 _spec/scripts/check.py --stale      # 追加：过期标注检查（（方向）/「尚未展开」段落）
+    python3 _spec/scripts/check.py --shallow    # 追加：浅句候选（疑似「正确的废话」）
+    python3 _spec/scripts/check.py --all        # 全部检查
 
 检查项：
   结构：front matter 顶格、filename 与路径一致、title 全库唯一、title 与 H1 一致、
@@ -29,7 +29,7 @@ import sys
 # ---------------------------------------------------------------- 定位仓库根
 
 def find_root():
-    here = os.path.dirname(os.path.abspath(__file__))       # <root>/spec/scripts
+    here = os.path.dirname(os.path.abspath(__file__))       # <root>/_spec/scripts
     root = os.path.dirname(os.path.dirname(here))
     if os.path.isdir(os.path.join(root, "capabilities")):
         return root
