@@ -1,6 +1,7 @@
 ---
 id: e7d33fcf-edc0-456d-b545-acfc0bbe0837
 created_at: 2026-09-18T08:19:38+08:00
+updated_at: 2026-10-01T08:45:08+08:00
 filename: capabilities/communication/L1/communication-logic.md
 title: 通信的基本逻辑
 level: L1
@@ -10,7 +11,7 @@ status: draft
 
 # 通信的基本逻辑
 
-> 消息只能靠你亲手传、亲手收——没有电话网、没有基站、没有互联网，别指望有人替你转达。
+> 消息要送到该到的人。电话网、基站和互联网还在，用它们；断了，就靠无线电、光、烟、声音，自己把消息递出去、收回来。
 
 ## 信息靠什么传
 

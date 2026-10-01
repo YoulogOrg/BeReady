@@ -1,6 +1,7 @@
 ---
 id: b15c5304-f194-49c3-955b-be8589a02dca
 created_at: 2026-09-18T08:39:41+08:00
+updated_at: 2026-10-01T08:45:08+08:00
 filename: capabilities/building/L2/fencing-and-enclosure.md
 title: 围栏与圈舍
 level: L2
@@ -10,7 +11,7 @@ status: draft
 
 # 围栏与圈舍
 
-> 崩后想留点活口和菜，就得把它们圈住、把野物挡在外面。桩、横杆、网或编织围挡，自己动手围。
+> 要留活口和菜，就把它们圈住，把野物挡在外面。桩、横杆、网或编织围挡，自己动手围。
 
 ## 畜栏（鸡兔猪）
 

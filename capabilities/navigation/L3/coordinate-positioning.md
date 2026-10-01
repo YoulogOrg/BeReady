@@ -1,6 +1,7 @@
 ---
 id: 5be355a9-a5bf-4834-91ee-8e990fb46e8c
 created_at: 2026-09-19T08:36:29+08:00
+updated_at: 2026-10-01T08:45:08+08:00
 filename: capabilities/navigation/L3/coordinate-positioning.md
 title: 坐标定位
 level: L3
@@ -14,7 +15,7 @@ status: draft
 
 ## 立即知道
 
-崩溃期的实用坐标 = **一个固定原点 + 方位（几度）+ 距离（几步）**。
+没有统一地图网格时，实用坐标 = **一个固定原点 + 方位（几度）+ 距离（几步）**。
 
 三个数一凑，任何地点都能写下来、存得住、复现得了。
 

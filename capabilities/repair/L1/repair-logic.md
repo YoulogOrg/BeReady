@@ -1,6 +1,7 @@
 ---
 id: f54f5fe6-9545-4586-84ed-0ff5b69ef773
 created_at: 2026-09-18T08:22:33+08:00
+updated_at: 2026-10-01T08:45:08+08:00
 filename: capabilities/repair/L1/repair-logic.md
 title: 修理的基本逻辑
 level: L1
@@ -10,7 +11,7 @@ status: draft
 
 # 修理的基本逻辑
 
-> 坏了没人修、没处买，只能自己凑合。修得好，省下的是命。
+> 东西坏了，先看是断、裂、松、脱、漏还是钝，再决定修、凑合还是换。修得动就续上功能。
 
 ## 先看清再动手
 

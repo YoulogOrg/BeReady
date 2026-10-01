@@ -1,6 +1,7 @@
 ---
 id: 3fb5d987-6c4f-428e-a54a-a9c8d99ce6d8
 created_at: 2026-09-17T22:46:20+08:00
+updated_at: 2026-10-01T08:45:08+08:00
 filename: capabilities/safety/L3/calling-for-help.md
 title: 求救
 level: L3
@@ -10,7 +11,7 @@ status: draft
 
 # 求救
 
-> 没有电话、没有报警、没有救援——"求救"变成"发出能被正确看到、又不过度暴露的信号"。
+> 电话和报警还打得通，就用它们，同时把位置说清楚。打不通、也等不到现成救援时，求救变成发出能被看到、又不过度暴露的信号。
 
 ## 立即知道
 

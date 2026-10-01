@@ -1,6 +1,7 @@
 ---
 id: 1fd32fa1-c39d-4896-b795-e2dd82da9aa5
 created_at: 2026-09-17T22:47:02+08:00
+updated_at: 2026-10-01T08:45:08+08:00
 filename: capabilities/safety/L3/casualty-transfer.md
 title: 伤者转移
 level: L3
@@ -14,7 +15,7 @@ status: draft
 
 ## 立即知道
 
-目标是"**移到更安全处**"，不是"送到医院"（没有医院）。
+目标是"**移到更安全处**"。医院还去得了，就转移到能送医的地方；去不了，就离开火、水、塌方，不要为了送医在现场硬搬。
 
 ## 先判断能不能搬
 

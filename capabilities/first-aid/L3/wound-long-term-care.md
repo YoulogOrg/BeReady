@@ -1,6 +1,7 @@
 ---
 id: db4e7ac1-bd2a-43bd-a30f-22ce63662575
 created_at: 2026-09-17T23:25:34+08:00
+updated_at: 2026-10-01T08:45:08+08:00
 filename: capabilities/first-aid/L3/wound-long-term-care.md
 title: 伤情长期护理与换药
 level: L3
@@ -10,7 +11,7 @@ status: draft
 
 # 伤情长期护理与换药
 
-伤口处理好只是开始，后面几天决定它能不能长好。没有医院，换药护理全靠自己。
+伤口处理好只是开始，后面几天决定它能不能长好。医院还去得了，按医嘱换药；去不了，换药和护理就按下面的步骤自己做。
 
 ## 立即知道
 

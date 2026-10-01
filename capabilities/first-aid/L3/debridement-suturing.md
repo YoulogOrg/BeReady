@@ -1,6 +1,7 @@
 ---
 id: 75e7af18-af2f-4f6c-b247-cfeec430cf26
 created_at: 2026-09-17T23:25:34+08:00
+updated_at: 2026-10-01T08:45:08+08:00
 filename: capabilities/first-aid/L3/debridement-suturing.md
 title: 清创与缝合
 level: L3
@@ -10,7 +11,7 @@ status: draft
 
 # 清创与缝合
 
-伤口里有脏东西、烂肉、异物，不清理就会化脓烂下去。没有医院，清创缝合得自己判断能不能做。
+伤口里有脏东西、烂肉、异物，不清理就会化脓。医院还去得了，清创和缝合交给能做的人；去不了，先判断自己能不能做，不能做的不要硬缝。
 
 ## 立即知道
 

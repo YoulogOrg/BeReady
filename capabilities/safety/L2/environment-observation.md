@@ -1,6 +1,7 @@
 ---
 id: 21ef1dc0-c782-4d62-b22e-b73708e547a6
 created_at: 2026-09-17T22:38:21+08:00
+updated_at: 2026-10-01T08:45:08+08:00
 filename: capabilities/safety/L2/environment-observation.md
 title: 环境观察
 level: L2
@@ -10,7 +11,7 @@ status: draft
 
 # 环境观察
 
-> 没有警报、没有广播，唯一的预警系统是你自己——靠固定观察建立"基线"，变化即异常。
+> 警报和广播还在，拿它们当外源。没有的时候，靠固定观察建立基线，变化就是异常。
 
 ## 立即知道
 

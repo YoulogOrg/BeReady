@@ -1,6 +1,7 @@
 ---
 id: e5917c17-186d-447a-b9ed-1efb1d7acd42
 created_at: 2026-09-17T22:37:59+08:00
+updated_at: 2026-10-01T08:45:08+08:00
 filename: capabilities/safety/L2/judgment-under-uncertainty.md
 title: 信息不足时的判断
 level: L2
@@ -10,7 +11,7 @@ status: draft
 
 # 信息不足时的判断
 
-> 没有天气预报、没有地图、没有消息来源之后，判断不再依赖"知道"，而依赖"默认"——信息越少，默认越保守。
+> 天气预报、地图和消息还在，就先用它们。没有这些来源时，判断靠事先定好的默认：信息越少，默认越保守。
 
 ## 立即知道
 

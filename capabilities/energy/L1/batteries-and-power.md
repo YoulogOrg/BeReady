@@ -1,6 +1,7 @@
 ---
 id: f31ffef8-3fe2-467b-97b7-c8b946201439
 created_at: 2026-09-18T08:13:48+08:00
+updated_at: 2026-10-01T08:45:08+08:00
 filename: capabilities/energy/L1/batteries-and-power.md
 title: 电池与蓄电
 level: L1
@@ -10,7 +11,7 @@ status: draft
 
 # 电池与蓄电
 
-> 电池是消耗品，断供后没有补货，用一节少一节。先紧着最要紧的活，别随手耗。
+> 电池用一节少一节。还能买到就按需要补；补不到，先留给最要紧的活，别随手耗。
 
 ## 手头电池怎么用
 
