@@ -1,14 +1,15 @@
 ---
 id: 431f89d1-a642-4b32-af43-67c1f42070fc
 created_at: 2026-09-17T16:00:05+08:00
+updated_at: 2026-10-01T08:26:37+08:00
 filename: _spec/BeReady Wikilink 命名与链接规范.md
 title: BeReady Wikilink 命名与链接规范
-status: draft
+status: active
 ---
 
 # BeReady Wikilink 命名与链接规范
 
-> 本文是《BeReady 文件组织与知识节点管理规范》的补充，只解决一件事：
+> 本文是《BeReady 文件组织与知识节点管理规范 2》的补充，只解决一件事：
 >
 > **`[[...]]` 里面到底应该写什么。**
 >
