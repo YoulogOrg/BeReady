@@ -1,6 +1,7 @@
 ---
 id: 45b47a49-80ea-453c-852b-2992d4f4dfb3
 created_at: 2026-09-17T23:16:10+08:00
+updated_at: 2026-10-01T12:20:28+08:00
 filename: capabilities/first-aid/L2/temperature-extremes.md
 title: 失温与中暑
 level: L2
@@ -56,6 +57,9 @@ status: draft
 
 ## 继续了解
 
+* [[保暖]]
+* [[防晒]]
+* [[保持干燥]]
 * [[庇护]]
 * [[水]]
 * [[伤情评估与优先级]]

@@ -1,7 +1,7 @@
 ---
 id: 21ef1dc0-c782-4d62-b22e-b73708e547a6
 created_at: 2026-09-17T22:38:21+08:00
-updated_at: 2026-10-01T08:45:08+08:00
+updated_at: 2026-10-01T12:20:28+08:00
 filename: capabilities/safety/L2/environment-observation.md
 title: 环境观察
 level: L2
@@ -56,6 +56,8 @@ status: draft
 
 ## 继续了解
 
+* [[选择安全位置]]
 * [[危险信号]]
+* [[撤离判断]]
 * [[危险识别]]
 * [[夜间安全]]
