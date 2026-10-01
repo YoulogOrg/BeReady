@@ -1,6 +1,7 @@
 ---
 id: 1a9cd3d2-f352-44b2-9e5f-c3f1f9436346
 created_at: 2026-09-17T16:26:55+08:00
+updated_at: 2026-10-01T11:17:16+08:00
 filename: capabilities/food/L1/food-inventory.md
 title: 清点现有食物
 level: L1
@@ -73,6 +74,7 @@ status: draft
 ## 继续了解
 
 * [[变质判断]]
+* [[热量与营养管理]]
 * [[食物分配]]
 * [[避免食物浪费]]
 * [[断电后的食物]]

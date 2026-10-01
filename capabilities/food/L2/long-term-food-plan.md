@@ -1,6 +1,7 @@
 ---
 id: b6b000a3-9124-4214-bd66-ace11411d62a
 created_at: 2026-09-17T16:38:42+08:00
+updated_at: 2026-10-01T11:17:16+08:00
 filename: capabilities/food/L2/long-term-food-plan.md
 title: 长期食物计划
 level: L2
@@ -79,6 +80,7 @@ status: draft
 
 ## 继续了解
 
+* [[热量与营养管理]]
 * [[食物储存]]
 * [[食物轮换]]
 * [[清点现有食物]]
