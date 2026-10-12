@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BeReady 生存指南｜突然停水？先别慌。</title>
+<style>
+:root{--signal:#E8FF3D;--ink:#171917;--paper:#fff;--warning:#FF5A1F;--muted:#656861;--line:#E5E7E2}
+*{box-sizing:border-box}html{background:#f1f2ee;color:var(--ink)}body{margin:0;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;background:#f1f2ee}
+.toolbar{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:14px 20px;background:rgba(255,255,255,.94);border-bottom:1px solid #ddd;backdrop-filter:blur(12px)}
+.toolbar-brand{display:flex;align-items:center;gap:10px}.toolbar-brand img{width:34px;height:34px;object-fit:contain}.toolbar-brand strong{font-size:14px;letter-spacing:.02em}.toolbar-brand span{display:block;color:#696c65;font-size:12px;margin-top:2px}
+.toolbar-actions{display:flex;gap:8px;flex-wrap:wrap}button{appearance:none;border:1px solid var(--ink);border-radius:999px;padding:10px 15px;background:var(--ink);color:white;font-size:13px;font-weight:650;cursor:pointer}button.secondary{background:white;color:var(--ink)}button:hover{transform:translateY(-1px)}
+.intro{max-width:900px;margin:28px auto 20px;padding:0 20px}.intro h1{margin:0 0 8px;font-size:clamp(24px,4vw,36px);letter-spacing:-.04em}.intro p{margin:0;color:#5f625c;line-height:1.7;font-size:14px}
+.cards{display:flex;flex-direction:column;align-items:center;gap:28px;padding:0 16px 48px}.card-shell{width:min(100%,540px)}.card-label{display:flex;align-items:center;justify-content:space-between;margin:0 0 9px;font-size:12px;color:#5f625c}.card-label strong{color:var(--ink);font-size:13px}
+.card{position:relative;isolation:isolate;overflow:hidden;width:100%;aspect-ratio:3/4;background:var(--paper);padding:7.3% 7.4%;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 14px 42px rgba(23,25,23,.09)}
+.card:after{content:"";position:absolute;z-index:-1;pointer-events:none;inset:0;border:1px solid rgba(23,25,23,.07)}
+.brandline{display:flex;align-items:center;gap:10px;min-height:32px}.brandline img{width:34px;height:34px;object-fit:contain}.brandname{font-size:clamp(10px,1.5vw,14px);font-weight:750;letter-spacing:.02em}
+.eyebrow{font-size:clamp(10px,1.35vw,13px);font-weight:750;letter-spacing:.1em;text-transform:uppercase}.headline{margin:0;font-weight:900;letter-spacing:-.065em;line-height:1.08;font-size:clamp(35px,7.2vw,70px);overflow-wrap:anywhere}.headline .accent{color:var(--warning)}.headline .highlight{display:inline-block;background:var(--signal);color:var(--ink);padding:.04em .13em .09em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.subline{margin:15px 0 0;font-size:clamp(13px,2vw,18px);font-weight:600;line-height:1.55}.foot{display:flex;justify-content:space-between;align-items:end;gap:10px;font-size:clamp(9px,1.2vw,12px);font-weight:650;letter-spacing:.03em}.foot .number{font-variant-numeric:tabular-nums; font-family: 'Courier New', Courier, monospace;}
+.cover{background:var(--signal)}.cover .headline{font-size:clamp(48px,9.4vw,92px);max-width:7em}.cover-tag{display:inline-flex;align-items:center;gap:8px;width:max-content;border:1.5px solid var(--ink);border-radius:999px;padding:8px 12px;font-size:clamp(10px,1.4vw,13px);font-weight:800}.cover-tag:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--ink)}
+.dark{background:var(--ink);color:white}.dark .brandname,.dark .eyebrow,.dark .foot{color:white}.dark .headline .highlight{color:var(--ink)}.light{background:white}.light .eyebrow{color:#545750}.warning{background:var(--warning);color:var(--ink)}.warning .brandname,.warning .eyebrow,.warning .foot{color:var(--ink)}.warning .headline .highlight{background:var(--ink);color:white}
+.side-note{border-left:4px solid var(--signal);padding:10px 0 10px 14px;font-size:clamp(12px,1.65vw,16px);line-height:1.5;font-weight:600;max-width:88%}.risk-note{border-left-color:var(--warning)}.end-card .headline{font-size:clamp(38px,7.5vw,76px)}
+.content-copy{max-width:540px;margin:-18px auto 38px;padding:0 16px;color:#555950;font-size:13px;line-height:1.7}.content-copy strong{color:var(--ink)}
+@media(min-width:900px){.cards{display:grid;grid-template-columns:repeat(2,minmax(0,540px));justify-content:center;align-items:start}.card-shell{width:100%}.content-copy{grid-column:1/-1}}
+@media print{@page{size:108mm 144mm;margin:0}html,body{background:white}.toolbar,.intro,.card-label,.content-copy{display:none!important}.cards{display:block;padding:0;margin:0}.card-shell{display:block;width:108mm;height:144mm;margin:0;break-after:page;page-break-after:always}.card-shell:last-child{break-after:auto;page-break-after:auto}.card{width:108mm;height:144mm;aspect-ratio:auto;box-shadow:none;print-color-adjust:exact;-webkit-print-color-adjust:exact}.headline{font-size:24pt}.cover .headline{font-size:34pt}.subline{font-size:11pt}.brandname{font-size:8pt}.eyebrow,.foot{font-size:7pt}.side-note{font-size:9pt}}
+</style>
+</head>
+<body>
+<header class="toolbar">
+  <div class="toolbar-brand"><img src="https://m2.daobox.cc/beready/BeReady-logo.svg" alt="BeReady Logo"><div><strong>BeReady 生存指南</strong><span>小红书图文卡片 · 1080 × 1440 · 3:4</span></div></div>
+  <div class="toolbar-actions"><button class="secondary" onclick="window.scrollTo({top:0,behavior:'smooth'})">回到顶部</button><button onclick="window.print()">打印 / 导出 PDF</button></div>
+</header>
+<section class="intro"><h1>突然停水？先别慌。</h1><p>BeReady 生存指南 · 高信噪比图文卡片。卡片负责吸引注意、传达关键判断；具体步骤和安全说明放在发布正文中。</p></section>
+<main class="cards">
+<section class="card-shell"><div class="card-label"><strong>01 / 封面</strong><span>吸引注意</span></div><article class="card cover">
+  <div class="brandline"><img src="https://m2.daobox.cc/beready/BeReady-logo.svg" alt=""><div class="brandname">BeReady 生存指南</div></div>
+  <div><div class="cover-tag">家庭应急 · 001</div><h2 class="headline" style="margin-top:24px">突然停水？<br>先别慌。</h2></div>
+  <div class="foot"><span>先判断，再行动。</span><span class="number">1/5</span></div>
+</article></section>
+<section class="card-shell"><div class="card-label"><strong>02 / 判断</strong><span>一个明确动作</span></div><article class="card light">
+  <div class="brandline"><img src="https://m2.daobox.cc/beready/BeReady-logo.svg" alt=""><div class="brandname">BeReady 生存指南</div></div>
+  <div><div class="eyebrow">01 / 先确认情况</div><h2 class="headline" style="margin-top:22px">先确认，<br>是不是<span class="highlight">只有你家</span><br>停水。</h2><p class="subline">问邻居 · 看物业或供水通知</p></div>
+  <div class="foot"><span>先判断影响范围</span><span class="number">2/5</span></div>
+</article></section>
+<section class="card-shell"><div class="card-label"><strong>03 / 用水优先级</strong><span>关键判断</span></div><article class="card dark">
+  <div class="brandline"><img src="https://m2.daobox.cc/beready/BeReady-logo.svg" alt=""><div class="brandname">BeReady 生存指南</div></div>
+  <div><div class="eyebrow" style="color:var(--signal)">02 / 用水优先级</div><h2 class="headline" style="margin-top:22px">先保<span class="highlight">饮水</span>。<br>再安排<br>其他用水。</h2></div>
+  <div class="foot"><span>把有限的水用在关键处</span><span class="number">3/5</span></div>
+</article></section>
+<section class="card-shell"><div class="card-label"><strong>04 / 安全提醒</strong><span>风险提示</span></div><article class="card light">
+  <div class="brandline"><img src="https://m2.daobox.cc/beready/BeReady-logo.svg" alt=""><div class="brandname">BeReady 生存指南</div></div>
+  <div><div class="eyebrow" style="color:var(--warning)">03 / 饮水安全</div><h2 class="headline" style="margin-top:22px">来水了，<br><span class="accent">不等于</span><br>可以直接喝。</h2><div class="side-note risk-note" style="margin-top:22px">先看供水部门通知，确认水质安全。</div></div>
+  <div class="foot"><span>安全提醒</span><span class="number">4/5</span></div>
+</article></section>
+<section class="card-shell"><div class="card-label"><strong>05 / 互动收尾</strong><span>引导评论</span></div><article class="card cover end-card">
+  <div class="brandline"><img src="https://m2.daobox.cc/beready/BeReady-logo.svg" alt=""><div class="brandname">BeReady 生存指南</div></div>
+  <div><div class="eyebrow">一起做好准备</div><h2 class="headline" style="margin-top:20px">你家有<br>备用饮用水吗？</h2><p class="subline">你多久检查一次？</p></div>
+  <div class="foot"><span>把准备变成习惯</span><span class="number">5/5</span></div>
+</article></section>
+</main>
+<section class="content-copy"><strong>发布正文建议（不属于卡片）：</strong><p>家里突然停水，先别急着找水桶。先确认是自家问题还是片区停水，再根据现有储水安排饮用、做饭和清洁。若恢复供水后出现异常，或供水部门发布了饮水安全通知，应按官方指引处理，不要仅凭水看起来清澈就判断能否饮用。</p><p>具体的恢复供水操作应以当地供水部门通知为准；不同原因造成的停水，处理方式可能不同。</p></section>
+</body></html>
